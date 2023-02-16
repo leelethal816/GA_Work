@@ -2,9 +2,9 @@
 import xlwt
 
 # Open the txt file, create a workbook, and rename it
-txt_file = open("SD SL.txt", "r")
+txt_file = open("ScienceDirect 1-100 - JE.txt", "r")
 wb = xlwt.Workbook()
-sheet1 = wb.add_sheet("Serial Lines")
+sheet1 = wb.add_sheet("Sheet 1")
 
 # Write header to Excel file
 sheet1.write(0, 0, "Year")
@@ -52,7 +52,7 @@ for line in txt_file:
         n = 1
 
 # Save to Excel file
-wb.save("SD Mixed 2.xls")
+wb.save("ScienceDirect 1-100 - JE.xls")
 
 # Close txt file
 txt_file.close()
